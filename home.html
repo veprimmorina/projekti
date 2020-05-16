@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ushtrime JS</title>
+    </head>
+    <body>
+        <p id = "variablat"></p>
+        <p id = "studentinfo"></p>
+        <script>
+            var x,y,emri,numri;
+            x = 10;
+            y = 15;
+            mbledhja = x+y;
+            emri = "Filan";
+            numri = 0.10;
+            //document.write("Hello World");
+            document.getElementById("variablat").innerHTML = mbledhja;
+            var studentname = "Filan";
+            var studentsurname = "Fisteku"
+            var mosha = "22";
+            document.getElementById("studentinfo").innerHTML = studentname + " "+studentsurname + " mosha e tij eshte " + mosha;
+            
+        </script>
+        <script>
+            function mbledhjaNumrave(){
+                var numri = window.prompt("Sheno numrin e pare");
+                var numridy = window.prompt("Sheno numrin e dyte");
+                var totali = (numri*1) + (numridy*1);
+                window.alert(numri +" + " + numridy + " = " +totali);
+            }
+            
+            //window.alert('Text Mesasage');
+            //window.prompt('Sheno moshen tuaj');
+            //window.confirm('Kofirmo qe ashte e sakte');
+        </script>
+        <button onclick="mbledhjaNumrave()"> Kliko Ketu</button>
+    </body>
+</html>
